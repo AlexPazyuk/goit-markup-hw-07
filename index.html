@@ -51,10 +51,19 @@
             </li>
           </ul>
         </address>
+        <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-toggle-icon" width="32" height="22">
+              <use href="./images/icon.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
       </div>
     </header>
     <main>
-      <!-- Hero -->
+      <!-- Hero
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
@@ -64,8 +73,8 @@
         </div>
       </section>
       <section class="features">
-        <div class="container features-container">
-          <!-- Features -->
+        <div class="container features-container"> -->
+          <!-- Features
           <h2 class="section-title visually-hidden">Features</h2>
           <ul class="list features-list">
             <li class="features-list-item">
@@ -120,8 +129,8 @@
         </div>
       </section>
       <section class="apps-section">
-        <div class="container apps-container">
-          <!-- What are we doing -->
+        <div class="container apps-container"> -->
+          <!-- What are we doing
           <h2 class="section-title apps-title">What are we doing</h2>
           <ul class="list apps-list">
             <li class="app-details">
@@ -150,8 +159,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- Our Team -->
+      </section> -->
+      <!-- Our Team
       <section class="team-section">
         <div class="container">
           <h2 class="section-title team-section-title">Our Team</h2>
@@ -549,7 +558,7 @@
       </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal section -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -630,6 +639,90 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu menu-toggle-close">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icon.svg#icon-close"></use>
+          </svg>
+        </button>
+
+      <ul class="mobile-menu list">
+        <li>
+          <a href="" class="link">About</a>
+        </li>
+        <li>
+          <a href="" class="link">Products</a>
+        </li>
+        <li>
+          <a href="" class="link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-tel">
+          <a class="link mobile-contacts-link" href="tel:">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile-contacts-mail">
+          <a class="link mobile-contacts-link" href="mailto:">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram icon"
+          >
+            <svg class="socials-icon" width="20" height="20">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter icon"
+          >
+            <svg class="socials-icon" width="20" height="20">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item"><a
+            class="socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="socials-icon" width="20" height="20">
+              <use href="./images/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin icon"
+          >
+            <svg class="socials-icon" width="20" height="20">
+              <use href="./images/icon.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
