@@ -424,7 +424,7 @@ justify-content: center;
 
 .features-title{
     text-align: center;
-    /* margin-bottom: 8px; */
+    margin-bottom: 8px;
 
     font-weight: 700;
         font-size: 36px;
@@ -806,6 +806,7 @@ max-width: 264px;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
+    justify-content: center;
 }
 .socials-footer{
     display: flex;
