@@ -576,7 +576,9 @@ margin-bottom: 8px;
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.customers-list-item{
+    height: 88px;
+}
 .customers-link{
     display: flex;
     position: relative;
