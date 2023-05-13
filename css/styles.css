@@ -144,20 +144,20 @@ margin-right: 76px
     align-items: center;
 }
 
-a.nav-link{
-position: relative;
+a.nav-link {
+    position: relative;
 
-padding-top: 24px;
-padding-bottom: 24px;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 
-color: var(--headings-color);
-align-items: center;
+    color: var(--headings-color);
+    align-items: center;
 
-transition: color var(--animation);
+    transition: color var(--animation);
 }
 
 a.nav-link:hover, 
