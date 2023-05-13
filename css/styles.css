@@ -84,18 +84,18 @@ button {
 }
 /* Reset End */
 .container {
-    /* min-width: 320px; */
+    min-width: 320px;
     width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     
 
-    /* outline: 2px solid red;
-        outline-offset: -2px; */
+    outline: 2px solid red;
+        outline-offset: -2px;
 }
 @media only screen and (min-width: 1158px) {
     .container{
-        max-width: 1128px;
+        max-width: 1158px;
             margin-left: auto;
             margin-right: auto;
     
@@ -224,9 +224,11 @@ margin-right: auto;
 text-align: center;
 padding-top: 112px;
     padding-bottom: 112px;
+
     
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 @media only screen and (max-width: 427px) {
     .hero {
         background-size: cover;
@@ -266,7 +268,7 @@ padding-top: 112px;
 }
 @media only screen and (min-width: 768px) {
     .hero {
-        background-size: cover;
+        background-size: 1440px 100%;
         background-repeat: no-repeat;
         background-position: center;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -350,6 +352,17 @@ transition: background-color var(--animation);
     padding-top: 96px;
     padding-bottom: 96px;
 }
+@media only screen and (max-width: 767px){
+.features-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.features-list{
+    width:396px;
+}
+}
 
 @media only screen and (min-width: 1158px) {
     .features {
@@ -381,6 +394,22 @@ justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
+}
+.features-title{
+    text-align: center;
+    margin-bottom: 8px;
+
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--headings-color);
+}
+
+.features-text{
+    font-weight: 500;
+        line-height: 1.5;
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px){
 .features-list-item{
@@ -419,27 +448,15 @@ justify-content: center;
         padding-left: 0;
             padding-right: 0;
     }
+.features-text {
+    font-weight: 400;
+}
 }
 
 
-.features-title{
-    text-align: center;
-    margin-bottom: 8px;
 
-    font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: var(--headings-color);
-}
-
-.features-text{
-    font-weight: 500;
-        line-height: 1.5;
-}
-
-/* .team-title,
+@media only screen and (min-width: 1158px) {
+.team-title,
 .project-title,
 .features-title{
 font-weight: 500;
@@ -447,7 +464,7 @@ font-size: 20px;
 line-height: 1.2;
 color:var(--headings-color);
 letter-spacing: 0.02em
-} */
+}}
 
 /* What are we doing */
 @media only screen and (max-width: 1157px) {
@@ -550,12 +567,38 @@ color: var(--headings-color)
 text-align: center;
 margin-bottom: 8px;
 }
-
-
 .card-wrapper{
     border-radius: 0px 0px 4px 4px;
     padding: 32px 0;
 }
+
+@media only screen and (max-width: 767px) {
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .team-cards {
+        width: 264px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1158px) {
+    .team-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  .team-cards{
+    width:552px;
+    row-gap: 64px;
+    column-gap: 24px;
+    justify-content: center;
+  }
+        }
 @media only screen and (min-width: 1158px) {
     .team-cards {
         gap: 24px;
@@ -575,6 +618,7 @@ margin-bottom: 8px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .customers-list-item{
     height: 88px;
@@ -595,6 +639,19 @@ margin-bottom: 8px;
     border-radius: 4px; 
     transition: color var(--animation), border var(--animation);
 }
+@media only screen and (max-width: 767px) {
+    .customers-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .customers-list {
+        width: 396px;
+    }
+}
 @media only screen and (max-width: 767px){
 .customers-list-item {
     position: relative;
@@ -610,6 +667,15 @@ margin-bottom: 8px;
     margin-bottom: 0;
 }}
 @media only screen and (min-width: 768px) and (max-width: 1157px){
+    .customers-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    .customers-list{
+        width: 552px;
+    }
     .customers-list-item{
     flex-basis: calc((100% - 24px*2) / 3);
     
@@ -791,8 +857,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 .text-footer{
 color: var(--light-mode-bcg);
-max-width: 264px;
-    max-height: 72px;
 }
 .socials-container{
     display: flex;
@@ -858,7 +922,7 @@ text-align: center;
         font-size: 12px;
         margin-bottom: 16px;
 
-        width: 398px;
+        min-width: 320px;
         height: 40px;
         padding-left: 16px;
 
@@ -896,22 +960,34 @@ text-align: center;
     background-color: var(--hover-color);
         }
 
+@media only screen and (min-width: 428px) and (max-width: 767px) {
+.sub-input{
+    width: 398px;
+}
+.text-footer{
+    width: 268px;
+}
+}
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
    .footer-container{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
+    align-items: baseline;
 
     padding-left: 108px;
   }
   .footer-logo{
     text-align: left;
   }
+  .text-footer{
+    width: 264px;
+  }
   .logo-text-container{
     margin-right: 24px;
   }
-  .socials-container{
-    margin-bottom: 104px;
+  .footer-title {
+      justify-content: start;
   }
 .sub-title {
     text-align: left;
@@ -920,9 +996,12 @@ text-align: center;
     flex-direction: row;
   }
 .sub-input {
-    width: 264px;
+    min-width: 264px;
 
     margin-right: 24px;
+}
+.socials-container{
+    margin-bottom: 0;
 }
 } 
 @media only screen and (min-width: 1158px) {
@@ -930,21 +1009,31 @@ text-align: center;
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    
     .footer-container {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: start;
-align-items: baseline;
-      
+        align-items: baseline; 
+        padding-left: 0;
+
     }
+
     .footer-logo {
         text-align: left;
     }
     .logo-text-container {
         margin-right: 120px;
+        margin-bottom: 0;
     }
+
+
 .socials-container {
     margin-right: 80px;
+    margin-bottom: 0;
+}
+.footer-title{
+    justify-content: start;
 }
     .sub-title {
         text-align: left;
@@ -955,8 +1044,9 @@ align-items: baseline;
     }
 
     .sub-input {
-        width: 264px;
+        min-width: 264px;
         margin-right: 24px;
+        margin-bottom: 0;
     
     }
 }
@@ -992,8 +1082,8 @@ align-items: baseline;
     transform: translate(-50%, -50%);
     opacity: 1;
 
-    width: 392px;
-    min-height: 550px;
+    /* width: 392px;
+    min-height: 550px; */
     padding: 72px 24px 24px 24px;
 
     background-color: var(--modal-bcg);
@@ -1002,6 +1092,19 @@ align-items: baseline;
 
     transition: transform var(--animation), opacity var(--animation);
 }
+@media only screen and (max-width: 427px){
+    .modal{
+        width: 320px;
+        padding: 72px 16px 24px 16px;
+    }
+
+}
+@media only screen and (min-width: 428px) and (max-width: 767px) {
+    .modal{
+    width: 392px;
+        min-height: 550px;
+
+    }}
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
 .modal{
@@ -1309,6 +1412,9 @@ fill: var(--ultimate-white);
 
      transition: color var(--animation);
  }
+ .mobile-menu .link.current {
+     color: var(--hover-color);
+ }
 .mobile-menu .link:hover,
 .mobile-menu .link:focus{
     color: var(--hover-color);
@@ -1338,6 +1444,5 @@ fill: var(--ultimate-white);
 }
  .mobile-socials {
      display: flex;
-     padding-right: 25px;
-     justify-content: space-between;
+     gap: 56px ;
  }
