@@ -741,9 +741,8 @@ margin-bottom: 8px;
             margin-bottom: 0;
         }
     }
-@media only screen and (min-width: 1157px) {
+@media only screen and (min-width: 1158px) {
     .customers-container{
-        max-width: 1190px;
             padding: 0 16px;
     }
     .customers{
@@ -952,6 +951,9 @@ justify-content: center;
 .socials-footer-link:hover,
 .socials-footer-link:focus {
     background-color: var(--success-color);
+}
+.sub-form{
+    width: 100%;
 }
 .sub-container {
 display: flex;   
